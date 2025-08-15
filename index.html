@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+    color: #333;
+    overflow-x: hidden;
+  }
+  header {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+  }
+  header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #c94f7c;
+  }
+  section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  .timeline {
+    border-left: 3px solid #c94f7c;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+  .event {
+    margin-bottom: 1.5rem;
+  }
+  .event h3 {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #c94f7c;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .letter {
+    background: rgba(255,255,255,0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+    margin-top: 2rem;
+  }
+  /* Floating hearts animation */
+  .heart {
+    position: fixed;
+    top: -10px;
+    font-size: 1.5rem;
+    animation: float 5s linear infinite;
+    color: #ff6b81;
+  }
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-800px) rotate(360deg); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>For My Love, <span id="hername">[Meri Mona]</span> ❤</h1>
+</header>
+
+<section>
+  <h2>Our Love Timeline Wifey</h2>
+  <div class="timeline">
+    <div class="event">
+      <h3>📅 Day We Met For The First Time Princess❤</h3>
+      <p><b>That day changed my life forever Wifey.</b> On <b>3 January 2024</b> ( The day when for the <b>First Time</b> we were holding each others hands and we are together <b> Mr. & Mrs. Prabhakar</b>.</p>
+    </div>
+    <div class="event">
+      <h3>☕ Best Day of My Life❤</h3>
+      <p><b>17th June 2024,</b>The most beautiful day of my life was when you said, <b>"I love you too"</b> for the very first time wifey. In that moment, time stood still… my heart skipped a beat, and the world faded away—leaving just you, me, and the magic of that precious feeling lado.</p>
+    </div>
+    <div class="event">
+      <h3>🌅 Our Precious Night❤</h3>
+      <p><b>9 sept 2024</b> That night we spent together, my love, was nothing less than a beautiful gift from God. It was unplanned, yet felt like destiny’s sweetest surprise. I was so happy and excited, thinking of how I could make every second more beautiful and memorable, even though I was a little shy. From cuddling you with all my love to holding you close in my arms, every moment was pure magic… moments I’ll treasure in my heart forever, my love.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Precious Moments</h2>
+  <div class="gallery">
+    <img src="First.jpg" alt="The day we met">
+    <img src="Second.jpg" alt="The day when we live together">
+    <img src="Third.jpg" alt="The day of romance">
+    <img src="Fourth.jpg" alt="My Birthday">
+  </div>
+</section>
+
+<section>
+  <h2>For My Princess❤</h2>
+  <div class="letter">
+    Dear <span id="herNameLetter">Wifey ❤</span>,<br><br>
+    You are my <b>life</b> princess, my sukoon, and the most precious blessing God has ever given me my angel(Meri Laxmi). Every heartbeat of mine whispers only for you love, every moment with you feels like a piece of heaven lado. You are my <b>SuperStrength</b>, my reason to <b>smile</b>, my everything. Every second of my life is wrapped in your love, and I cherish you more than words could ever hold duggu. <b>I love you</b> endlessly—beyond the stars, beyond time, beyond forever   <b>(Apka Pgl Loves You So Much Meli MONA DARLING❤)</b>
+  </div>
+</section>
+
+<footer>
+<span id="myName">Apka Pgl❤</span>
+</footer>
+
+<script>
+  // Floating hearts
+  function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+    heart.innerText = '❤';
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 5000);
+  }
+  setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
